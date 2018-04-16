@@ -1,0 +1,14 @@
+.header-image {
+    width: 100%;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.about-profile-pic {
+    float: left;
+    margin-right: 1rem;
+}
+
+.about-container h3 {
+    margin-top: 0;
+}

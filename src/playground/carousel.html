@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .carousel-outer {
+            height: 200px;
+            width: 400px;
+            background-color: gray;
+            position: relative;
+        }
+
+        .carousel-outer .carousel {
+            white-space: nowrap;
+            font-size: 0;
+        }
+        
+        .carousel-outer .carousel > div:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+        }
+
+        .carousel-outer .carousel >div {
+            height: 190px;
+            width: 190px;
+            background-color: goldenrod;
+            display: inline-block;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="carousel-outer">
+        <div class="carousel">
+            <div><span>1</span></div>
+            <div><span>2</span></div>
+            <div><span>3</span></div>
+            <div><span>4</span></div>
+            <div><span>5</span></div>
+            <div><span>6</span></div>
+        </div>
+        <span class="arrow left"><-</span><span class="arrow right">-></span>
+    </div>
+</body>
+</html>
